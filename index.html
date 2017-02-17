@@ -18,9 +18,31 @@
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body >
-<div class="pure-g container" id='page'>
-    
-</div>
+
+     <div className="pure-g container">
+               <div className="pure-u-1">
+                                    <div className="top fontSize">
+                                        <a className="page-header" href="http://www.adeveloperdiary.com/d3-js/how-to-integrate-react-and-d3-the-right-way/"><h4 className="page-h4">(React + D3) Click here to view the full tutorial on adeveloperdiary.com</h4></a>
+                                    </div>
+                </div>
+                <div className="pure-u-1">
+                    <div className="top" id="top-line-chart">
+                        <Visitors/>
+                     </div>
+                </div>
+                <div className="pure-u-5-12">
+                     <div className="bottom-left" id="browser">
+                        <Browser/>
+                     </div>
+                </div>
+                <div className="pure-u-7-12">
+                    <div className="bottom-right" id="ret_visitors">
+                       <RetVisitors/>
+                    </div>
+                </div>
+            </div>
+
+
 
 <script type="text/babel" src="lib/charts/utils/SVGDefs.jsx"></script>
 <script src="lib/charts/utils/ReactMixins.js"></script>
