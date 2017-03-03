@@ -41,8 +41,8 @@ var Visitors = React.createClass({
 });
 
 
-ReactDOM.render(<Browser/>,document.getElementById("browser"));
-ReactDOM.render(<RetVisitors/>,document.getElementById("ret_visitors"));
+// ReactDOM.render(<Browser/>,document.getElementById("browser"));
+// ReactDOM.render(<RetVisitors/>,document.getElementById("ret_visitors"));
 ReactDOM.render(<Visitors/>,document.getElementById("top-line-chart"));
 
 

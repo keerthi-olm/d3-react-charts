@@ -15,15 +15,15 @@ var Axis=React.createClass({
     },
     render: function () {
 
-        var translate = "translate(0,"+(this.props.h)+")";
+            var translate = "translate(0,"+(this.props.h)+")";
 
-        return (
-            <g className="axis" transform={this.props.axisType=='x'?translate:""} >
-            </g>
-        );
-    }
+            return (
+                <g className="axis" transform={this.props.axisType=='x'?translate:""} >
+                </g>
+            );
+        }
 
-});
+    });
 
 var Grid=React.createClass({
     propTypes: {
@@ -117,7 +117,7 @@ var Dots=React.createClass({
         data.pop();
 
         var circles=data.map(function(d,i){
-
+            //Dots with tool tips on mouseover. Mouse Event handler
             return (<circle className="dot" r="7" cx={_self.props.x(d.date)} cy={_self.props.y(d.count)} fill="#7dc7f4"
                             stroke="#3f5175" strokeWidth="5px" key={i}
                             onMouseOver={_self.props.showToolTip} onMouseOut={_self.props.hideToolTip}
